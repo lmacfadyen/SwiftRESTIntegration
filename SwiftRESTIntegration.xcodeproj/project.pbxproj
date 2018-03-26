@@ -12,6 +12,9 @@
 		1173760D20503FDE00CB5F37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1173760B20503FDE00CB5F37 /* Main.storyboard */; };
 		1173760F20503FDE00CB5F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1173760E20503FDE00CB5F37 /* Assets.xcassets */; };
 		1173761220503FDE00CB5F37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1173761020503FDE00CB5F37 /* LaunchScreen.storyboard */; };
+		1173761D205040D900CB5F37 /* PostalCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173761C205040D900CB5F37 /* PostalCodeService.swift */; };
+		11737620205040E400CB5F37 /* PostalCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173761E205040E400CB5F37 /* PostalCode.swift */; };
+		11737621205040E400CB5F37 /* RESTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173761F205040E400CB5F37 /* RESTError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		1173760E20503FDE00CB5F37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1173761120503FDE00CB5F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1173761320503FDE00CB5F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1173761C205040D900CB5F37 /* PostalCodeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostalCodeService.swift; sourceTree = "<group>"; };
+		1173761E205040E400CB5F37 /* PostalCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostalCode.swift; sourceTree = "<group>"; };
+		1173761F205040E400CB5F37 /* RESTError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		1173760620503FDE00CB5F37 /* SwiftRESTIntegration */ = {
 			isa = PBXGroup;
 			children = (
+				1173761B2050404E00CB5F37 /* controller */,
+				1173761A2050404100CB5F37 /* service */,
+				117376192050401300CB5F37 /* model */,
 				1173760720503FDE00CB5F37 /* AppDelegate.swift */,
-				1173760920503FDE00CB5F37 /* ViewController.swift */,
 				1173760B20503FDE00CB5F37 /* Main.storyboard */,
 				1173760E20503FDE00CB5F37 /* Assets.xcassets */,
 				1173761020503FDE00CB5F37 /* LaunchScreen.storyboard */,
 				1173761320503FDE00CB5F37 /* Info.plist */,
 			);
 			path = SwiftRESTIntegration;
+			sourceTree = "<group>";
+		};
+		117376192050401300CB5F37 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1173761E205040E400CB5F37 /* PostalCode.swift */,
+				1173761F205040E400CB5F37 /* RESTError.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1173761A2050404100CB5F37 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				1173761C205040D900CB5F37 /* PostalCodeService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		1173761B2050404E00CB5F37 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1173760920503FDE00CB5F37 /* ViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1173761D205040D900CB5F37 /* PostalCodeService.swift in Sources */,
+				11737620205040E400CB5F37 /* PostalCode.swift in Sources */,
+				11737621205040E400CB5F37 /* RESTError.swift in Sources */,
 				1173760A20503FDE00CB5F37 /* ViewController.swift in Sources */,
 				1173760820503FDE00CB5F37 /* AppDelegate.swift in Sources */,
 			);
